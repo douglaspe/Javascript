@@ -1,43 +1,41 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 <body>
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a id="nav-title" class="navbar-brand" href="index.html"></a>
+                <a id="navTitle" class="navbar-brand" href="index.html"></a>
             </div>
         </div>
     </nav>
-
     <div class="container-fluid">
         <div class="form-inline">
             <div class="form-group">
-                <input type="text" id="desc" class="form-control" name="" value="" placeholder="Description">
+                <input type="text" class="form-control" id="desc" placeholder="Description">
             </div>
             <div class="form-group">
-                <input type="text" id="amount" class="form-control" name="" value="" placeholder="Amount">
+                <input type="text" class="form-control" id="amount" placeholder="Amount">
             </div>
             <div class="form-group">
-                <input type="text" id="value" class="form-control" name="" value="" placeholder="Value">
+                <input type="text" class="form-control" id="value" placeholder="Value">
             </div>
             <span id="btnUpdate" style="display: none;">
-                <span id="inputIdUpdate"></span>
-                <button class="btn btn-default" onclick="updateData();">Save</button>
-                <button class="btn btn-default" onclick="resetData();">Cancel</button>
+                <span id="inputIDUpdate"></span>
+                <button onclick="updateData();" class="btn btn-default">Save</button>
+                <button onclick="resetForm();" class="btn btn-default">Cancel</button>
             </span>
             <span id="btnAdd">
-                <button class="btn btn-default" onclick="addData();">Add</button>
-                <button class="btn btn-default" onclick="resetData();">Reset</button>
-                <button class="btn btn-default" onclick="deleteList();">Delete List</button>
+                <button onclick="addData();" class="btn btn-default">Add</button>
+                <button onclick="resetForm();" class="btn btn-default">Reset</button>
+                <button onclick="deleteList();" class="btn btn-default">Delete list</button>
             </span>
+
         </div>
 
         <div id="errors" style="display: none;"></div>
@@ -49,7 +47,7 @@
 
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-            <h4 class="text-center text-success">Total: <span id="totalValue"> </span></h4>
+            <h4 class="text-center text-success">Total: <span id="totalValue">$ 0,00</span></h4>
         </div>
     </nav>
 
